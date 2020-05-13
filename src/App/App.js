@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -18,6 +18,8 @@ function App() {
         >
           Learn React
         </a>
+
+        <button className='btn btn-danger'>LET THE FUN BEGIN</button>
       </header>
     </div>
   );
