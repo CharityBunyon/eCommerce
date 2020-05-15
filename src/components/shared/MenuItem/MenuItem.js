@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 import './MenuItem.scss';
 
@@ -23,4 +24,4 @@ const MenuItem = ({
   </div>
 );
 
-export default MenuItem;
+export default withRouter(MenuItem);
