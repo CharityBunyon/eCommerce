@@ -1,5 +1,8 @@
-// eslint-disable-next-line import/prefer-default-export
-export const setCurrentUser = (user) => ({
-  type: 'SET_CURRENT_USER',
+import UserActionTypes from './user.types';
+
+const setCurrentUser = (user) => ({
+  type: UserActionTypes.SET_CURRENT_USER,
   payload: user,
 });
+
+export default setCurrentUser;
