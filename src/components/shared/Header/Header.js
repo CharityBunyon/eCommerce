@@ -35,4 +35,4 @@ const mapStateTopProps = (state) => ({
   currentUser: state.user.currentUser,
 });
 
-export default connect()(Header);
+export default connect(mapStateTopProps)(Header);
