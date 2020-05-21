@@ -4,6 +4,12 @@ const toogleCartHidden = () => ({
   type: CartActionTypes.TOGGLE_CART_HIDDEN,
 });
 
-export default toogleCartHidden;
+export const addItem = (item) => ({
+  type: CartActionTypes.ADD_ITEM,
+  payload: item,
+});
+
+export default { toogleCartHidden };
+
 
 // 3. Imported to CartIcon
