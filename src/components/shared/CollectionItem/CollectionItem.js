@@ -2,7 +2,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 // eslint-disable-next-line import/named
-import addItem from '../../../redux/cart/cart.actions';
+import { addItem } from '../../../redux/cart/cart.actions';
 import CustomBtn from '../CustomBtn/CustomBtn';
 import './CollectionItem.scss';
 
