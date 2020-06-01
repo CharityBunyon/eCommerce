@@ -4,9 +4,8 @@ import './CartDropdown.scss';
 
 const CartDropdown = () => (
     <div className='cart-dropdown'>
-        <div className='cart-items'>
+        <div className='cart-items'/>
             <CustomBtn>GOT TO CHECKOUT</CustomBtn>
-        </div>
     </div>
 );
 
