@@ -1,11 +1,11 @@
-/* eslint-disable no-shadow */
 
 import React from 'react';
 import { connect } from 'react-redux';
-import { addItem } from '../../../redux/cart/cart.actions';
+import addItem from '../../../redux/cart/add.action';
 import CustomBtn from '../CustomBtn/CustomBtn';
 import './CollectionItem.scss';
 
+// eslint-disable-next-line no-shadow
 const CollectionItem = ({ item, addItem }) => {
   const {
     name, price, imageUrl,
@@ -23,7 +23,7 @@ const CollectionItem = ({ item, addItem }) => {
         <span className='name'>{name}</span>
         <span className='price'>{price}</span>
       </div>
-      <CustomBtn onClick={() => addItem(item)} inverted >
+      <CustomBtn inverted onClick={() => addItem(item)}>
         Add to cart
       </CustomBtn>
     </div>
